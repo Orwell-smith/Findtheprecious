@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="autor" content="Léonard Fonteneau">
     <meta name="desciption" content="One ring to rule them all, one ring to find them, One ring to bring them all and in the darkness bind them.">
     <meta name="keywords" content="Lord of the rings, the precious, Tolkien">
     <title>Find The Precious</title>
@@ -13,9 +14,9 @@
 
 <header>
     <nav>
-        <a href="#"><h1>FindThePrecious.com</h1></a>
-        <a href="#Fellows"><h2>Fellows</h2></a>
-        <a href="#Contact"><h2>Contact us</h2></a>
+        <h1>FindThePrecious.com</h1>
+        <a href="#Fellows" title="Go to the Fellows section"><h2>Fellows</h2></a>
+        <a href="#Contact" title="Go to the Contact section"><h2>Contact us</h2></a>
     </nav>
 </header>
 
@@ -24,28 +25,28 @@
         <div class="slideshow">
             <h3>Dangerous fellowship try to destroy the ring</h3>
             <p>Orcs, Goblins, Balrogs, protect your master Sauron !</p>
-            <a href="https://placeholder.com"><img src="https://via.placeholder.com/1000x200" alt="placeholder"></a>
+            <a href="https://placeholder.com" title="Go to Placeholder.com"><img src="https://via.placeholder.com/1000x200" alt="Slideshow"></a>
         </div>
 
         <h3>Fellows wanted dead <span>(or alive if you want to eat them later)</span></h3>
 
         <div class="card">
             <div class="coin-box"><p>Reward 1000 gold coins</p></div>
-            <a href="https://placeholder.com"><img src="https://via.placeholder.com/200x150" alt="placeholder"></a>
+            <a href="https://placeholder.com" title="Go to Placeholder.com"><img src="https://via.placeholder.com/200x150" alt="Card of the wizard"></a>
             <h4>The Wizard</h4>
             <p>Small description...</p>
         </div>
 
         <div class="card">
             <h5>DEAD</h5>            
-            <a href="https://placeholder.com"><img src="https://via.placeholder.com/200x150" alt="placeholder"></a>
+            <a href="https://placeholder.com" title="Go to Placeholder.com"><img src="https://via.placeholder.com/200x150" alt="Card of the hobbit"></a>
             <h4>Hobbit #3</h4>
             <p>Small description...</p>
         </div>
 
         <div class="card">
             <div class="coin-box"><p>Reward 250 gold coins</p></div>
-            <a href="https://placeholder.com"><img src="https://via.placeholder.com/200x150" alt="placeholder"></a>
+            <a href="https://placeholder.com" title="Go to Placeholder.com"><img src="https://via.placeholder.com/200x150" alt="Card of the yummy dwarf"></a>
             <h4>Yummy Dwarf</h4>
             <p>Small description...</p>
         </div>
@@ -55,27 +56,35 @@
 
     <section id="Contact">
         <h3>Contact us</h3>
-        <form>
-            <input type="text" name="nom" />
-            <input type="email" name="mail" />
-            <textarea>Votre message</textarea>
-            <button type="submit">Envoyer</button>
+        <form action="/" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name"/>
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail"/>
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_name"></textarea>
+            </div>
+            <button type="submit">Send</button>
         </form>
     </section>
 </main>
 
 <footer>
-    <a href="#">About us</a>
-    <a href="#">Fellows</a>
-    <a href="#">Join our army</a>
-    <a href="#">FAQ</a>
-    <a href="#">Reward conditions</a>
-    <a href="#">Legal mentions</a>
-    <a href="#" class="bold">Sauron4Ever.com</a>
-    <a href="#" class="bold">Follow him also on twitter</a>
+    <a href="#" title="Go to the About us section">About us</a>
+    <a href="#" title="Go to the Fellows section">Fellows</a>
+    <a href="#" title="Go to the Join our army section">Join our army</a>
+    <a href="#" title="Go to the FAQ section">FAQ</a>
+    <a href="#" title="See the Reward conditions">Reward conditions</a>
+    <a href="#" title="See the legal mentions">Legal mentions</a>
+    <a href="#" class="bold" title="Go to Sauron's website">Sauron4Ever.com</a>
+    <a href="#" class="bold" title="Follow our master Sauron on twitter">Follow him also on twitter</a>
 </footer>
 
 </body>
-
 
 </html>
